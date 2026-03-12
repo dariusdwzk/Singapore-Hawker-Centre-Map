@@ -1,6 +1,6 @@
 # Singapore Hawker Centre Interactive Map
 
-A responsive, interactive map of all hawker centres in Singapore. Built as a frontend technical assessment for Topo EH-AI Consulting (Option 2).
+A responsive, interactive map of all hawker centres in Singapore. Built as a frontend technical assessment.
 
 ---
 
@@ -23,13 +23,13 @@ npm run build   # Production build output to dist/
 
 ## Tech Stack
 
-| Layer     | Choice                                          | Reason                                                |
-| --------- | ----------------------------------------------- | ----------------------------------------------------- |
-| Framework | React 18 + Vite                                 | Specified in assessment; fast HMR dev experience      |
-| Map       | Leaflet.js + react-leaflet v4                   | Lightweight, no API key required, OpenStreetMap tiles |
-| Styling   | Tailwind CSS v3                                 | Utility-first; rapid, consistent UI                   |
-| Fonts     | DM Sans + DM Mono (Google Fonts)                | Clean, legible; Mono for data fields                  |
-| Data      | data.gov.sg public API + local GeoJSON fallback | Official Singapore government open dataset            |
+| Layer     | Choice                                          |
+| --------- | ----------------------------------------------- |
+| Framework | React 18 + Vite                                 |
+| Map       | Leaflet.js + react-leaflet v4                   |
+| Styling   | Tailwind CSS v3                                 |
+| Fonts     | DM Sans + DM Mono (Google Fonts)                |
+| Data      | data.gov.sg public API + local GeoJSON fallback |
 
 ---
 
@@ -39,7 +39,7 @@ npm run build   # Production build output to dist/
 - **Hover preview** — hovering a pin shows name, address, and postal code in a tooltip popup
 - **Click to zoom** — clicking a pin smoothly flies the map to that location and keeps the popup open
 - **Search** — real-time debounced search by hawker centre name (200 ms)
-- **Region filter** — dropdown filters by URA planning region; map auto-pans to show the filtered area
+- **Region filter** — dropdown filters by region; map auto-pans to show the filtered area
 - **Sidebar list** — scrollable list of filtered results; clicking an item flies the map to that pin
 - **Live result count** — shows how many centres match the current filters vs. total
 - **Clear filters** — one-click button to reset all search and region filters
